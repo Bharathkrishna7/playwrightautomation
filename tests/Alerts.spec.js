@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test.skip('Alert with OK', async ({ page }) => {
   await page.goto('https://testautomationpractice.blogspot.com/');
-
+//Adding here
   //Enabling Dilaog window handler
   page.on('dialog', async dialog=>{
     expect(dialog.type()).toContain('alert')
